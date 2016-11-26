@@ -45,7 +45,7 @@ window.fetch(url).then((res) => {
 +api 埋点性能收集(如超长耗时、网络超时、50x 出错等)
 
 
-本仓库中有我封装的vue-fetch，依赖很多，而且是根据业务开发的，只是展示出一些思路，能让使用fetch如下面这样方便
+本仓库中有我封装的vue-fetch，依赖很多，而且是根据业务开发的，只为展示出一些思路，能让使用fetch如下面这样方便
 ```javascript
   this.$fetch({
     url: url, *必填
@@ -57,4 +57,4 @@ window.fetch(url).then((res) => {
     //不需要在这处理result.status
   })
   ```
-  封装中包含了错误处理和一些可以省略掉的步骤都封装在插件内部。
+  封装中包含了错误处理和一些可以省略掉的步骤都封装在插件内部。[vue-fetch](https://github.com/GeoffZhu/manage-your-fetch/blob/master/vue-fetch.js)
